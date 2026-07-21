@@ -6,7 +6,6 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     AvatarPicker \
     ThemesStub \
-    Jellyfish \
     LogViewer \
     Gramophone \
     GameSpace \
@@ -23,10 +22,8 @@ PRODUCT_PACKAGES += \
     VoltageJump \
     AppDataBackup
 
-ifeq ($(VOLTAGE_BUILD_TYPE),OFFICIAL)
-    PRODUCT_PACKAGES += \
-        Updater
-endif
+PRODUCT_PACKAGES += \
+    Updater
 
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
@@ -58,3 +55,9 @@ PRODUCT_PACKAGES += \
     UdfpsIcons \
     UdfpsAnimations
 endif
+
+PRODUCT_PACKAGES += \
+    TrichromeLibraryDualArch \
+    TrichromeWebViewDualArch \
+    TrichromeChromeDualArch \
+    VanadiumConfig
